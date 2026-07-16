@@ -1,0 +1,21 @@
+{
+  "name": "keep",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Keep — civil engineering + architecture design, estimation, and blueprint platform.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev --workspace apps/api",
+    "dev:web": "npm run dev --workspace apps/web",
+    "build:graph": "npm run build --workspace @keep/building-graph",
+    "build:api": "npm run build --workspace apps/api",
+    "build:web": "npm run build --workspace apps/web",
+    "seed": "npm run seed --workspace apps/api"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
